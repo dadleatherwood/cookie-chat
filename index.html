@@ -24,8 +24,10 @@
       <p class="message-header">
         Messages From DevMountaineers
       </p>
-      <p class="message" ng-repeat="message in messages ">
-        <span id="message">{{message.message}}</span>  <span id="date">{{message.createdAt | date : 'short'}}</span></p>
+      <p class="message" ng-repeat="message in messages">
+        <span id="date">{{message.createdAt | date : 'short'}}</span>
+        <span id="message">{{message.message.slice(0, 140)}}</span>
+      </p>
     </div>
   </div>
 

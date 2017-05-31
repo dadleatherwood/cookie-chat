@@ -14,8 +14,10 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  background-image: url("https://i.ytimg.com/vi/eId7-Gk5peY/maxresdefault.jpg");
+  background-image: url("https://i.ytimg.com/vi/5v-sJF81qFs/maxresdefault.jpg");
   background-size: cover;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 .main-container {
   width: 75%;
@@ -71,19 +73,15 @@ body {
   padding: 10px;
   font-size: 32px;
   border: 1px solid #A3A3A3;
-  display: flex;
-  justify-content: space-between;
-
-
-
 }
 
 #date {
+  float: right;
   background-color: #00A0E7;
   border-radius: 25px;
   color: white;
   font-size: 28px;
   padding: 5px 15px;
-
+  height: 50px;
 
 }
