@@ -6,11 +6,12 @@ angular.module('chatroom').controller('mainCtrl', function($scope, messageServic
   function getMessages() {
     messageService.getMessages()
     .then(function(response){
-      $scope.messages = response.data
+      $scope.messages = response.data.reverse()
     })
   }
 
   getMessages()
+
 
 
   //The postMessage function will take whatever the user typed in (hint: look at the html and see what ng-model correlates to on the input box),
